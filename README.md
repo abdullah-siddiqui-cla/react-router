@@ -28,9 +28,14 @@
 # 5. Query Parameters
 ## Goal: Add filtering functionality to a product listing page using query parameters (e.g., /products?category=electronics).
 ## Steps:
-- Use `useSearchParams` to read query parameters.
+- const location = `useLocation` and `URLSearchParams` to read query parameters
 - Update the displayed products based on the category parameter.
 - Create links to filter products dynamically.
+- Hint: For reading the query params, use the following code,
+```
+const location = useLocation();
+const searchParams = new URLSearchParams(location.search);
+```
 
 # 6. Nested Routes
 ## Goal: Add nested routing for sections within the About page (e.g., `/about/team`, `/about/company`).
